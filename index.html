@@ -21,33 +21,21 @@
     <script src="roguefic.js"></script>
 
     <div class="container">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a href="#tab-room" data-toggle="tab" class="nav-link">Room</a>
-        </li>
-        <li class="nav-item">
-          <a href="#tab-map" data-toggle="tab" class="nav-link">Map</a>
-        </li>
-      </ul>
       <br>
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab-room">
-          <div class="row">
-            <div class="col-md-9">
-              <div id="room-text"></div>
-              <div id="event" style="display: none;">
-                <div id="event-text"></div>
-                <a onclick="close_event()" href="#">Return to Room</a>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h3>In the Room</h3>
-              <ul class="list-group" id="room-list"></ul>
-            </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div id="room-text"></div>
+          <div id="event" style="display: none;">
+            <div id="event-text"></div>
+            <a onclick="close_event()" href="#">Return to Room</a>
           </div>
         </div>
-        <div class="tab-pane" id="tab-map">
-          <h3>Map Name</h3>
+        <div class="col-md-3">
+          <h3>In the Room</h3>
+          <ul class="list-group" id="room-list"></ul>
+          <br>
+          <h3>Visited Rooms</h3> 
+          <ul class="list-group" id="visited-room-list"></ul>
         </div>
       </div>
     </div>
